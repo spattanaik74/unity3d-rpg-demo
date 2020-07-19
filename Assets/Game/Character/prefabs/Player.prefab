@@ -1,5 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!136 &4915464
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4542201443406806881}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.35
+  m_Height: 1.88
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.83, z: 0}
 --- !u!114 &-7299106122184764205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25,6 +39,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 200
+--- !u!114 &2415473728844578605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4542201443406806881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4049330eb7608145ad8fb8ac33ed837, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4315004072875781157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35,32 +61,32 @@ PrefabInstance:
     - target: {fileID: 353776052521702216, guid: 751980900c9d82042be4a7b25af34059,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 29.63
       objectReference: {fileID: 0}
     - target: {fileID: 353776052521702216, guid: 751980900c9d82042be4a7b25af34059,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 353776052521702216, guid: 751980900c9d82042be4a7b25af34059,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 39.86
       objectReference: {fileID: 0}
     - target: {fileID: 353776052521702216, guid: 751980900c9d82042be4a7b25af34059,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 353776052521702216, guid: 751980900c9d82042be4a7b25af34059,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 353776052521702216, guid: 751980900c9d82042be4a7b25af34059,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 353776052521702216, guid: 751980900c9d82042be4a7b25af34059,
         type: 3}
@@ -90,6 +116,11 @@ PrefabInstance:
     - target: {fileID: 353776052521702212, guid: 751980900c9d82042be4a7b25af34059,
         type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 353776052521702212, guid: 751980900c9d82042be4a7b25af34059,
+        type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3633187324445528260, guid: 751980900c9d82042be4a7b25af34059,
