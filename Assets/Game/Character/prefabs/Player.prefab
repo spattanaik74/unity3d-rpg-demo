@@ -26,6 +26,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a972fb61e3c2ec409b1a3cc6858ff64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2415473728844578605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4542201443406806881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4049330eb7608145ad8fb8ac33ed837, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &3572926509664457563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39,18 +51,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 200
---- !u!114 &2415473728844578605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4542201443406806881}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4049330eb7608145ad8fb8ac33ed837, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &4315004072875781157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -123,10 +123,19 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 353776052521702212, guid: 751980900c9d82042be4a7b25af34059,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3633187324445528260, guid: 751980900c9d82042be4a7b25af34059,
         type: 3}
       propertyPath: weaponDamage
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 826463351, guid: 751980900c9d82042be4a7b25af34059, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 751980900c9d82042be4a7b25af34059, type: 3}
