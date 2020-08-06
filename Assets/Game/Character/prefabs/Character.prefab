@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7439663166065517474}
   - component: {fileID: 3633187324445528260}
   - component: {fileID: 6046034499274093046}
+  - component: {fileID: 8486821027913218951}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -50,6 +51,8 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -74,6 +77,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!195 &826463351
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -109,6 +113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  maxSpeed: 6
 --- !u!95 &7439663166065517474
 Animator:
   serializedVersion: 3
@@ -155,3 +160,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05accf6fad177ba44bfa78d8760970b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8486821027913218951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353776052521702212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea9374b509b70f4bba37e4a2ca8cf00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueIdentifier: 
