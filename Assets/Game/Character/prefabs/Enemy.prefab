@@ -56,6 +56,7 @@ MonoBehaviour:
   patrolPath: {fileID: 0}
   wayPointTolerance: 1
   dwellTime: 2
+  patrolSpeedFraction: 0.2
 --- !u!1001 &5443550793693521992
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63,6 +64,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8583550504660810079}
     m_Modifications:
+    - target: {fileID: 133518, guid: 30cf93deff988e74e88a144bd2127c18, type: 3}
+      propertyPath: m_Name
+      value: Character_Knights_Soldier_01
+      objectReference: {fileID: 0}
     - target: {fileID: 417656, guid: 30cf93deff988e74e88a144bd2127c18, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -107,12 +112,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 133518, guid: 30cf93deff988e74e88a144bd2127c18, type: 3}
-      propertyPath: m_Name
-      value: Character_Knights_Soldier_01
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30cf93deff988e74e88a144bd2127c18, type: 3}
+--- !u!4 &5443550793693372230 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 423694, guid: 30cf93deff988e74e88a144bd2127c18,
+    type: 3}
+  m_PrefabInstance: {fileID: 5443550793693521992}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8355928585201396247
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -120,6 +127,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 826463351, guid: 751980900c9d82042be4a7b25af34059, type: 3}
+      propertyPath: m_Speed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 353776052521702212, guid: 751980900c9d82042be4a7b25af34059,
+        type: 3}
+      propertyPath: m_Name
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 353776052521702216, guid: 751980900c9d82042be4a7b25af34059,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -175,20 +191,28 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 353776052521702212, guid: 751980900c9d82042be4a7b25af34059,
-        type: 3}
-      propertyPath: m_Name
-      value: Enemy
-      objectReference: {fileID: 0}
     - target: {fileID: 3633187324445528260, guid: 751980900c9d82042be4a7b25af34059,
         type: 3}
       propertyPath: weaponDamage
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 826463351, guid: 751980900c9d82042be4a7b25af34059, type: 3}
-      propertyPath: m_Speed
-      value: 3
-      objectReference: {fileID: 0}
+    - target: {fileID: 3633187324445528260, guid: 751980900c9d82042be4a7b25af34059,
+        type: 3}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 65794f48c0e36074f807221b78cf35b2,
+        type: 2}
+    - target: {fileID: 3633187324445528260, guid: 751980900c9d82042be4a7b25af34059,
+        type: 3}
+      propertyPath: handTransform
+      value: 
+      objectReference: {fileID: 5443550793693372230}
+    - target: {fileID: 3633187324445528260, guid: 751980900c9d82042be4a7b25af34059,
+        type: 3}
+      propertyPath: defaultWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 65794f48c0e36074f807221b78cf35b2,
+        type: 2}
     - target: {fileID: 5197444744512012649, guid: 751980900c9d82042be4a7b25af34059,
         type: 3}
       propertyPath: target
