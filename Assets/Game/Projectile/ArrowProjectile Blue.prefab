@@ -12,6 +12,17 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3299165409737150381, guid: 772f32201233e84438fa30a8b74c7a53,
+        type: 3}
+      propertyPath: speed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3299165409737150381, guid: 772f32201233e84438fa30a8b74c7a53,
+        type: 3}
+      propertyPath: hitEffect
+      value: 
+      objectReference: {fileID: 6772161554010173812, guid: b0334153b849a7445a061df36824f3ef,
+        type: 3}
     - target: {fileID: 4390055589884269146, guid: 772f32201233e84438fa30a8b74c7a53,
         type: 3}
       propertyPath: m_Parameters.colorGradient.key0.r
