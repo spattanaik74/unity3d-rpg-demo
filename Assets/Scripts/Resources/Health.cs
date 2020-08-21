@@ -1,7 +1,9 @@
 using UnityEngine;
 using RPG.Saving;
+using RPG.Stats;
+using RPG.Core;
 
-namespace RPG.Core
+namespace RPG.Resouces
 {
     public class Health : MonoBehaviour, ISaveable
     {
@@ -9,19 +11,38 @@ namespace RPG.Core
 
         bool isDead = false;
 
+        private void Start() 
+        {
+            health = GetComponent<BaseStats>().GetStat(Stat.Health);  
+        }
+
         public bool IsDead()
         {
             return isDead;
         }
 
-        public void Takedamage(float Damage)
+        public void Takedamage(GameObject instigator, float Damage)
         {
             health = Mathf.Max(health - Damage , 0);
             print(health);
             if (health == 0)
             {
                 Die();
+                AwardExperience(instigator);
             }
+        }
+
+        public float GetPercentage()
+        {
+            return 100 * (health / GetComponent<BaseStats>().GetStat(Stat.Health));
+        }
+
+        private void AwardExperience(GameObject instigator)
+        {
+            Experience experience = instigator.GetComponent<Experience>();
+            if(experience == null) return;
+
+            experience.GainExperience(GetComponent<BaseStats>().GetStat(Stat.ExperienceReward));
         }
 
         private void Die()

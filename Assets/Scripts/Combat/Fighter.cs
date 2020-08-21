@@ -1,12 +1,14 @@
 using UnityEngine;
 using RPG.Movement;
 using RPG.Core;
+using RPG.Saving;
+using RPG.Resouces;
 
 
 
 namespace RPG.Combat
 {
-    public class Fighter : MonoBehaviour , IAction
+    public class Fighter : MonoBehaviour , IAction, ISaveable
     {
 
         
@@ -19,12 +21,14 @@ namespace RPG.Combat
 
         Health target;
         float timeSinceLastAttack = Mathf.Infinity;
-
         Weapon currentWeapon = null;
 
         private void Start() 
         {
-            EquipWeapon(defaultWeapon);
+            if(currentWeapon == null)
+            {
+                EquipWeapon(defaultWeapon);
+            }
         }
 
         private void Update()
@@ -74,11 +78,11 @@ namespace RPG.Combat
 
             if(currentWeapon.HasProjectile())
             {
-                currentWeapon.LaunchProjectile(rightHandTransform, leftHandTransform, target);
+                currentWeapon.LaunchProjectile(rightHandTransform, leftHandTransform, target, gameObject);
             }
             else
             {
-                target.Takedamage(currentWeapon.GetDamage());
+                target.Takedamage(gameObject, currentWeapon.GetDamage());
             }
 
             
@@ -127,6 +131,22 @@ namespace RPG.Combat
             weapon.Spawn(rightHandTransform, leftHandTransform, animator);
         }
 
+        public Health GetTarget()
+        {
+            return target;
+        }
+
+        public object CaptureState()
+        {
+            return currentWeapon.name;
+        }
+        
+        public void RestoreState(object state)
+        {
+            string weaponName = (string)state;
+            Weapon weapon = UnityEngine.Resources.Load<Weapon>(weaponName);
+            EquipWeapon(weapon);
+        }
 
     }
 }

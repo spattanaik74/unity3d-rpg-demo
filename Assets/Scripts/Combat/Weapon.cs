@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using RPG.Core;
+using RPG.Resouces;
 
 namespace RPG.Combat
 {
@@ -26,9 +27,16 @@ namespace RPG.Combat
                 GameObject weapon = Instantiate(equipedPrefab, handTransform);
                 weapon.name = weaponName;
             }
+
+            var overrideController = animator.runtimeAnimatorController as AnimatorOverrideController;
+
             if(animatorOverride != null)
             {
                 animator.runtimeAnimatorController = animatorOverride;
+            }
+            else if (overrideController != null)
+            {
+                animator.runtimeAnimatorController = overrideController.runtimeAnimatorController;
             }
            
         }
@@ -59,10 +67,10 @@ namespace RPG.Combat
             return projectile != null;
         }
 
-        public void LaunchProjectile(Transform rightHand, Transform leftHand, Health target)
+        public void LaunchProjectile(Transform rightHand, Transform leftHand, Health target, GameObject instigator)
         {
             Projectile projectileInstance = Instantiate(projectile, GetTransform(rightHand, leftHand).position, Quaternion.identity);
-            projectileInstance.SetTarget(target, weaponDamage);
+            projectileInstance.SetTarget(target,instigator, weaponDamage);
         }
 
         public float GetDamage()

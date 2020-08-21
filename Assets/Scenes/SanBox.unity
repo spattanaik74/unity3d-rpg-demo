@@ -3038,6 +3038,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: e019db3893a2bae459ab529834cc6608,
         type: 2}
+    - target: {fileID: 926932161261821887, guid: c9ffcc6db0ba29a419002f990e67142d,
+        type: 3}
+      propertyPath: defaultWeaponName
+      value: Bow Red
+      objectReference: {fileID: 0}
     - target: {fileID: 4205920112621575219, guid: c9ffcc6db0ba29a419002f990e67142d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3101,7 +3106,7 @@ PrefabInstance:
     - target: {fileID: 4294335777450313344, guid: c9ffcc6db0ba29a419002f990e67142d,
         type: 3}
       propertyPath: chaseDistance
-      value: 16
+      value: 19.97
       objectReference: {fileID: 0}
     - target: {fileID: 5108683099845869390, guid: c9ffcc6db0ba29a419002f990e67142d,
         type: 3}
@@ -4753,6 +4758,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 65794f48c0e36074f807221b78cf35b2,
         type: 2}
+    - target: {fileID: 2932526004931261512, guid: bae1b4c0ffa50d245a56946eb1f24bb3,
+        type: 3}
+      propertyPath: defaultWeaponName
+      value: Fireball
+      objectReference: {fileID: 0}
     - target: {fileID: 3033949130855771487, guid: bae1b4c0ffa50d245a56946eb1f24bb3,
         type: 3}
       propertyPath: m_IsKinematic
