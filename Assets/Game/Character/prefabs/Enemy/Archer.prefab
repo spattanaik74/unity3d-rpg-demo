@@ -12,6 +12,11 @@ PrefabInstance:
       propertyPath: charcaterClass
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3785330820336261168, guid: b939fd68d8ae22a4eb87b895cdf1c6d3,
+        type: 3}
+      propertyPath: characterClass
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4728098296289114835, guid: b939fd68d8ae22a4eb87b895cdf1c6d3,
         type: 3}
       propertyPath: defaultWeapon

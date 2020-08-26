@@ -42,6 +42,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a972fb61e3c2ec409b1a3cc6858ff64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-1346057064642220179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4542201443406806881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da557875ad9cf64aa146f773b05d8a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  experiencePoints: 0
 --- !u!114 &2415473728844578605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,19 +80,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 200
---- !u!114 &-1346057064642220179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4542201443406806881}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7da557875ad9cf64aa146f773b05d8a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  experiencePoints: 0
 --- !u!1001 &4315004072875781157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -193,7 +193,7 @@ PrefabInstance:
         type: 3}
       propertyPath: defaultWeapon
       value: 
-      objectReference: {fileID: 11400000, guid: 65794f48c0e36074f807221b78cf35b2,
+      objectReference: {fileID: 11400000, guid: dd6c6880f1b4b4249b946a5223ba75fa,
         type: 2}
     - target: {fileID: 3633187324445528260, guid: 751980900c9d82042be4a7b25af34059,
         type: 3}
