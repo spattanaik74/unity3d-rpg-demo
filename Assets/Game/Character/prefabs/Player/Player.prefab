@@ -79,7 +79,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ccf44516922ac047bbd097518d46d1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 200
+  regenerationPercentage: 70
 --- !u!1001 &4315004072875781157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -213,7 +213,18 @@ PrefabInstance:
     - target: {fileID: 5151566661073842727, guid: 751980900c9d82042be4a7b25af34059,
         type: 3}
       propertyPath: startingLevel
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5151566661073842727, guid: 751980900c9d82042be4a7b25af34059,
+        type: 3}
+      propertyPath: levelUpParticle
+      value: 
+      objectReference: {fileID: 6220424383080696486, guid: 538f642357593474d974aafc0464a920,
+        type: 3}
+    - target: {fileID: 5151566661073842727, guid: 751980900c9d82042be4a7b25af34059,
+        type: 3}
+      propertyPath: shouldUseModifiers
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8486821027913218951, guid: 751980900c9d82042be4a7b25af34059,
         type: 3}

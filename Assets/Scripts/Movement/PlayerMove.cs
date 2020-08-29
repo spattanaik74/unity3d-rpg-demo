@@ -4,8 +4,6 @@ using RPG.Movement;
 using RPG.Core;
 using RPG.Resouces;
 
-
-
 namespace RPG.Control
 {
 
@@ -15,7 +13,8 @@ namespace RPG.Control
         //Cached reference
         Health health;
 
-        private void Start() {
+        private void Awake() 
+        {
             health = GetComponent<Health>();
         }
    
