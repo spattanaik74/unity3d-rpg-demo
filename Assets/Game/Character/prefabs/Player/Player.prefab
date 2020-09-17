@@ -58,6 +58,8 @@ MonoBehaviour:
   - type: 4
     texture: {fileID: 2800000, guid: f8c873f1e53e83f4aabf342d6be1dfc3, type: 3}
     hotspot: {x: 0, y: 0}
+  maxNavMeshProjectionDistance: 1
+  maxNavPathLength: 40
 --- !u!114 &-1346057064642220179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96,6 +98,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   regenerationPercentage: 70
+  takeDamage:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4545789265807319191}
+        m_TargetAssemblyTypeName: RPG.UI.DamageText.DamageTextSpawner, Assembly-CSharp
+        m_MethodName: Spawn
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 13
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &4315004072875781157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -221,6 +238,11 @@ PrefabInstance:
       propertyPath: leftHandTransform
       value: 
       objectReference: {fileID: 5204061166873655547}
+    - target: {fileID: 4723678709263500537, guid: 751980900c9d82042be4a7b25af34059,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5151566661073842727, guid: 751980900c9d82042be4a7b25af34059,
         type: 3}
       propertyPath: charcaterClass
@@ -261,6 +283,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4315004072875781157}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4545789265807319191 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 356938956625235122, guid: 751980900c9d82042be4a7b25af34059,
+    type: 3}
+  m_PrefabInstance: {fileID: 4315004072875781157}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 103668dcdc2203a46a22b77f03af05cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5204061166874038551
 PrefabInstance:
   m_ObjectHideFlags: 0

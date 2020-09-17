@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.36283687, g: 0.566149, b: 0.8437137, a: 1}
+  m_IndirectSpecularColor: {r: 0.36301693, g: 0.5662136, b: 0.84370714, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4828,6 +4828,61 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Core
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393725967876139400, guid: bae1b4c0ffa50d245a56946eb1f24bb3,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.60376835
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393725967876139400, guid: bae1b4c0ffa50d245a56946eb1f24bb3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.676784
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393725967876139400, guid: bae1b4c0ffa50d245a56946eb1f24bb3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.4165003
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393725967876139400, guid: bae1b4c0ffa50d245a56946eb1f24bb3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.062887385
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393725967876139400, guid: bae1b4c0ffa50d245a56946eb1f24bb3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 140.231
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393725967876139400, guid: bae1b4c0ffa50d245a56946eb1f24bb3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 32.927994
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393725967876139400, guid: bae1b4c0ffa50d245a56946eb1f24bb3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -84.324005
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393725967876139401, guid: bae1b4c0ffa50d245a56946eb1f24bb3,
+        type: 3}
+      propertyPath: m_Lightmapping
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393725967876139401, guid: bae1b4c0ffa50d245a56946eb1f24bb3,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 7.374e-42
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393725967876139401, guid: bae1b4c0ffa50d245a56946eb1f24bb3,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 1.01e-43
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393725967876139401, guid: bae1b4c0ffa50d245a56946eb1f24bb3,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 2.3509887e-38
       objectReference: {fileID: 0}
     - target: {fileID: 2393725968407387326, guid: bae1b4c0ffa50d245a56946eb1f24bb3,
         type: 3}
