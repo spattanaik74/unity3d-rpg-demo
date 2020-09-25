@@ -2,7 +2,7 @@
 using RPG.Combat;
 using RPG.Movement;
 using RPG.Core;
-using RPG.Resouces;
+using RPG.Attributes;
 using System;
 using UnityEngine.EventSystems;
 using UnityEngine.AI;

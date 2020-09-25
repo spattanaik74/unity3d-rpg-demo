@@ -2,6 +2,8 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.AI;
+using RPG.Control;
+using RPG.Saving;
 
 namespace RPG.SceneManagement
 {
@@ -33,12 +35,18 @@ namespace RPG.SceneManagement
     
             Fader fader = FindObjectOfType<Fader>();
 
+            Savingwrapper wrapper = FindObjectOfType<Savingwrapper>();
+            PlayerMove playerController = GameObject.FindWithTag("Player").GetComponent<PlayerMove>();
+            playerController.enabled = false;
+
+
             yield return fader.FadeOut(fadeoutTime);
 
-            Savingwrapper wrapper = FindObjectOfType<Savingwrapper>();
             wrapper.Save();
 
             yield return SceneManager.LoadSceneAsync(sceneToLoad);
+            PlayerMove newPlayerController = GameObject.FindWithTag("Player").GetComponent<PlayerMove>();
+            newPlayerController.enabled = false;
             
             wrapper.Load();
 
@@ -48,7 +56,9 @@ namespace RPG.SceneManagement
             wrapper.Save();
 
             yield return new WaitForSeconds(fadewaitTime);
-            yield return fader.FadeIn(fadeinTime);
+            fader.FadeIn(fadeinTime);
+
+            newPlayerController.enabled = true;
 
             Destroy(gameObject);
         }

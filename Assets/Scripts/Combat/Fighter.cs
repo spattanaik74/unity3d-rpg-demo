@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using RPG.Movement;
 using RPG.Core;
 using RPG.Saving;
-using RPG.Resouces;
+using RPG.Attributes;
 using RPG.Stats;
 using GameDevTV.Utils;
 using System;
